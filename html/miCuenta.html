@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/miCuenta.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <input class="nav_checkbox" type="checkbox" id="nav_checkbox" title="menu hamburguesa">
+            <label for="nav_checkbox" class="nav_toggle">
+                <svg class="menu" width="100" viewBox="0 0 50 50">
+                    <path
+                        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z">
+                    </path>
+                </svg>
+                <svg class="close" width="100" viewBox="0 0 84 84">
+                    <path d="M42,0C18.803,0,0,18.807,0,42c0,23.197,18.803,42,42,42c23.193,0,42-18.803,42-42
+                    C84,18.807,65.193,0,42,0z M50.643,42l15.303,15.302l-8.643,8.642L42.002,50.643L26.699,65.944l-8.641-8.642L33.359,42
+                    l-15.3-15.298l8.641-8.646L42,33.357l15.301-15.299l8.643,8.641L50.643,42z" />
+                </svg>
+            </label>
+            <ul class="nav_menu">
+                <li class="menu_logo">
+                    <a href="#">
+                        <img class="img" src="../media/logo.png" alt="Es el logo de la floristeria">
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a class="link" href="../index.html">Inicio</a>
+                </li>
+                <li class="list_item">
+                    <a class="link" href="./html/">Catálogo</a>
+                </li>
+                <li class="list_item">
+                    <a class="link" href="./html/">Destacado</a>
+                </li>
+                <li class="list_item">
+                    <a class="link" href="./html/">Reseñas</a>
+                </li>
+                <li class="list_item">
+                    <a class="link" href="./html/">Sobre nosotros</a>
+                </li>
+                <li class="list_item">
+                    <a class="link" href="./html/">Contacto</a>
+                </li>
+                <li class="list_item">
+                    <a class="link" href="./html/miCuenta.html">Mi cuenta</a>
+                </li>
+                <li class="list_item">
+                    <a class="link" href="./html/">Carrito</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenedor-opciones">
+            <h2>Opciones</h2>
+            <button class="accordion">
+                Iniciar sesión
+                <span class="icono">&#9660;</span>
+            </button>
+            <div class="panel">
+                <div class="login-container">
+                    <p>Ingresa tus datos para acceder a tu cuenta</p>
+                    <form class="login-form" action="#" method="POST">
+                        <label for="email">Email:
+                            <input type="email" id="email" name="email" required placeholder="Correo">
+                        </label>
+                        <label for="password">Contraseña:
+                            <input type="password" id="password" name="password" required placeholder="Contraseña">
+                        </label>
+                        <button type="submit">Iniciar Sesión</button>
+                        <p class="register-link">¿Olvidaste tu comtraseña? <a href="registro.html">Recuperar</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <button class="accordion">
+                Crear cuenta
+                <span class="icono">&#9660;</span>
+            </button>
+            <div class="panel">
+                <div class="create-account-container">
+                    <p>Regístrate para disfrutar de nuestros servicios y ofertas.</p>
+                    <form class="create-account-form" action="#" method="POST">
+                        <label for="nombre">Nombre completo:
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                        </label>
+                        <label for="email">Email:
+                            <input type="email" id="email" name="email" required placeholder="Correo">
+                        </label>
+                        <label for="password">Contraseña:
+                            <input type="password" id="password" name="password" required placeholder="Contraseña">
+                        </label>
+                        <label for="confirm-password">Confirmar contraseña:
+                            <input type="password" id="confirm-password" name="confirm-password" required
+                                placeholder="Confirma tu contraseña">
+                        </label>
+                        <button type="submit">Crear Cuenta</button>
+                        <p class="login-link">¿Ya tienes una cuenta? <a href="#">Inicia sesión aquí</a></p>
+                    </form>
+                </div>
+
+            </div>
+
+            <button class="accordion">
+                Información personal
+                <span class="icono">&#9660;</span>
+            </button>
+            <div class="panel">
+                <div class="personal-info-container">
+                    <p>Actualiza tus datos personales para mantener tu perfil al día.</p>
+                    <form class="personal-info-form" action="#" method="POST">
+                        <label for="nombre">Nombre completo:
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                        </label>
+                        <label for="telefono">Teléfono:
+                            <input type="tel" id="telefono" name="telefono" required
+                                placeholder="Tu número de teléfono">
+                        </label>
+                        <label for="mensaje">Mensaje Personalizado (opcional)
+                            <textarea id="mensaje" name="mensaje"></textarea>
+                        </label>
+                        <label for="email">Correo Electrónico
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                        <label for="direccion">Dirección:
+                            <input type="text" id="direccion" name="direccion" required
+                                placeholder="Tu dirección completa">
+                        </label>
+                        <label for="fecha-nacimiento">Fecha de nacimiento:
+                            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                        </label>
+                        <label for="genero">Género:
+                            <select id="genero" name="genero" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </label>
+                        <button type="submit">Guardar Cambios</button>
+                    </form>
+                </div>
+            </div>
+
+            <button class="accordion">
+                Carrito de compras
+                <span class="icono">&#9660;</span>
+            </button>
+            <div class="panel">
+                <div class="shopping-cart-container">
+                    <h2>Carrito de Compras</h2>
+                    <p>Revisa los productos en tu carrito antes de completar la compra.</p>
+                    <div class="cart-items">
+                        <!-- Ejemplo de un producto en el carrito -->
+                        <div class="cart-item">
+                            <img src="../media/producto-ramo-1.webp" alt="Imagen del producto" class="cart-item-img">
+                            <div class="cart-item-details">
+                                <h3>Ramo de Rosas</h3>
+                                <p>Cantidad:
+                                    <input type="number" value="1" min="1" placeholder="1">
+                                </p>
+                                <p>Precio: $500 MXN</p>
+                                <button class="remove-item-btn">Eliminar</button>
+                            </div>
+                        </div>
+
+                        <!-- Más productos pueden ir aquí -->
+                    </div>
+                    <div class="cart-summary">
+                        <p>Total de productos: <span id="total-items">1</span></p>
+                        <p>Total a pagar: <span id="total-price">$500 MXN</span></p>
+                        <button class="checkout-btn">Proceder al Pago</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="accordion">
+                Métodos de pago
+                <span class="icono">&#9660;</span>
+            </button>
+            <div class="panel">
+                <div class="metodos-pago">
+                    <h2>Métodos de Pago</h2>
+                    <p>Elige el método de pago que más te convenga. Todos nuestros métodos son seguros y confiables.</p>
+
+                    <div class="metodo">
+                        <h3>Tarjetas de Crédito/Débito</h3>
+                        <p>Aceptamos:</p>
+                        <ul>
+                            <li>Visa</li>
+                            <li>Mastercard</li>
+                            <li>American Express</li>
+                        </ul>
+                        <img src="../media/visa.png" alt="Visa" class="logo">
+                        <img src="../media/mastercard.webp" alt="Mastercard" class="logo">
+                        <img src="../media/amex.png" alt="American Express" class="logo">
+                    </div>
+
+                    <div class="metodo">
+                        <h3>PayPal</h3>
+                        <p>Paga fácilmente con tu cuenta PayPal.</p>
+                        <img src="../media/paypal.png" alt="PayPal" class="logo">
+                    </div>
+
+                    <div class="metodo">
+                        <h3>Transferencia Bancaria</h3>
+                        <p>Realiza un depósito directamente a nuestra cuenta bancaria:</p>
+                        <ul>
+                            <li><strong>Banco:</strong> Banco Ejemplo</li>
+                            <li><strong>CLABE:</strong> 1234567890123456</li>
+                            <li><strong>Titular:</strong> Floristería </li>
+                        </ul>
+                    </div>
+
+                    <div class="metodo">
+                        <h3>Pago en Efectivo</h3>
+                        <p>Disponible para recogida en tienda o entrega a domicilio. También puedes pagar en
+                            establecimientos asociados.</p>
+                        <ul>
+                            <li>OXXO</li>
+                            <li>7-Eleven</li>
+                        </ul>
+                        <img src="../media/oxxo.webp" alt="OXXO" class="logo">
+                        <img src="../media/7-eleven.png" alt="7-Eleven" class="logo">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer id="footer">
+        <ul class="footer_lista">
+            <li class="footer_lista_item">
+                <div class="footer_div_contenido">
+                    <img src="../media/logo.png" alt="">
+                </div>
+            </li>
+            <li class="footer_lista_item">
+                <div class="footer_div_contenido">
+                    <h3 class="footer_titulo">Contacto</h3>
+                    <p class="footer_parrafo">Telefono: 3319092923</p>
+                    <p class="footer_parrafo">
+                        <a class="footer_link" href="mailto:floristeria@gmail.com">Contáctanos vía email</a>
+                    </p>
+
+                </div>
+            </li>
+            <li class="footer_lista_item">
+                <div class="footer_div_contenido">
+                    <h3 class="footer_titulo">Informacion</h3>
+                    <p class="footer_parrafo">Direccion: Calle #1</p>
+                    <a class="footer_link" href="./html/">Sobre nosotros</a>
+                </div>
+            </li>
+            <li class="footer_lista_item">
+                <div class="footer_div_contenido">
+                    <h3 class="footer_titulo">Mi cuenta</h3>
+                    <p class="footer_parrafo"> <a class="footer_link" href="./html/"> Login</a> </p>
+                </div>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../js/miCuenta.js"></script>
+</body>
+
+</html>
