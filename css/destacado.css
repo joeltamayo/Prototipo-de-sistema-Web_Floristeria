@@ -1,0 +1,357 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/*Productos / Servicos*/
+section {
+    margin: 20px;
+    padding: 20px;
+    width: 70%;
+    border-bottom: 1px solid grey;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Contenedor de productos */
+.seccion {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Tarjeta individual (Producto / Servicio) */
+.card {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 400px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+    min-height: 50px;
+}
+
+.card .descripcion {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+.card .precio {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+.card button {
+    margin-top: auto;
+    padding: 10px 15px;
+    background-color: rgb(207, 157, 157);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #d87050;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*Ventana ermergente*/
+.popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.popup-content {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 900px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.popup-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+    border-color: #007bff;
+    transform: scale(1.1);
+}
+
+.popup-details {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.popup-details h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.popup-details p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.popup-details strong {
+    color: #000000;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+#quantity {
+    max-width: 40px;
+}
+
+.quantity-controls button {
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quantity-controls button:hover {
+    background: #0056b3;
+}
+
+#add-to-cart {
+    background-color: rgb(207, 157, 157);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+#add-to-cart:hover {
+    background-color: rgb(228, 148, 148);
+}
+
+#close-popup {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff4c4c;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#close-popup:hover {
+    background: #d93434;
+    transform: scale(1.1);
+}
+
+/* Diseño responsivo */
+/*Movil*/
+@media only screen and (max-width: 600px) {
+    section {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .seccion {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        min-height: auto; 
+    }
+
+    .card img {
+        max-height: 200px;
+    }
+
+    .card button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .popup-container {
+        padding: 20px;
+    }
+
+    .popup-content {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .popup-images {
+        width: 100%;
+        align-items: center;
+    }
+
+    .popup-details {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .main-image {
+        max-width: 250px;
+    }
+
+    .thumbnail {
+        width: 50px;
+        height: 50px;
+    }
+
+    #add-to-cart {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #close-popup {
+        top: 10px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    section {
+        width: 85%;
+    }
+
+    .card {
+        flex: 0 0 45%;
+        min-height: auto; 
+    }
+
+    .card img {
+        max-height: 250px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/*Escritorio*/
+@media only screen and (min-width: 1025px) {
+    .card {
+        flex: 0 0 30%;
+    }
+
+    .card img {
+        max-height: 300px;
+    }
+}
