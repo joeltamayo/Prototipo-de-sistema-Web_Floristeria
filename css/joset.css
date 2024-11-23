@@ -1,0 +1,102 @@
+.nosotros img{
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.nosotros{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+}
+
+.nosotros a:hover{
+    background-color: rgb(185, 136, 143);
+}
+
+.varios {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.varios img{
+    display: block;
+    max-width: 20%;
+}
+
+.varios p{
+    display: block;
+    max-width: 40%;
+}
+
+.catalogo img{
+    height: 300px;
+}
+
+.catalogo{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+}
+
+.productos img{
+    max-width: 250px;
+}
+
+.productos img:hover{
+    max-width: 240px;
+}
+
+#slider{
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+    overflow:hidden;
+    background-color: black;
+}
+/*Valores de las imagenes*/
+#slider img{
+    margin: 0 -300px;
+    -moz-transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    opacity: 0;
+}
+/*Para que la primera imagen este activa al inicio*/
+#slider img:nth-child(1){
+    opacity: 1;
+}
+
+table{
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    overflow:hidden;
+    background-color: white;
+    border: 0;
+}
+
+#izquierda{
+    text-align: right;
+}
+#derecha{
+    text-align: left;
+}
