@@ -48,6 +48,8 @@ a {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 400px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .card img {

@@ -20,6 +20,11 @@ body {
 }
 
 .servicio {
+    text-decoration: none;
+    color: black;
+}
+
+.servicio {
     padding: 20px;
     width: 100%;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -42,10 +47,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.servicios a{
-    text-decoration: none;
-    color: black;
-}
+
 
 .baner {
     display: flex;
