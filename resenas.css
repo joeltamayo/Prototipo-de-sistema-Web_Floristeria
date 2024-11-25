@@ -1,0 +1,170 @@
+
+  main {
+    padding: 20px;
+  }
+     
+  .resena-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .tu-resena, .otras-resenas {
+    flex: 1;
+    
+  }
+  
+  textarea, select, button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    max-width: 150px;
+  }
+
+  .boton{
+    color: black;
+    border: 1px solid #ccc;
+    background-color: #d8caca;
+    border-radius: 5px;
+  }
+  .boton:hover {
+    background-color: #6d6767;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  #resenasList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .resena {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  .faq-container {
+    margin: 20px 0;
+  }
+  
+  .faq {
+    margin-bottom: 10px;
+  }
+
+  .contacto-container {
+    border: 3px solid #ccc;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .contacto-container .info {
+    width: 50%;
+    font-size: 16px;
+  }
+  
+  .contactForm {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  form label {
+    font-weight: bold;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+  /* Estilos del Chatbot */
+.chat-container {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatbox {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.bot-message {
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.user-message {
+  background-color: #d1e7dd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.chat-input button:hover {
+  background-color: #218838;
+}
+  
