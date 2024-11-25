@@ -4,9 +4,8 @@ main {
     margin: auto;
 }
 
-/* Efecto adicional para el fondo */
 body {
-    background: linear-gradient(135deg, #e7edf3, #e9d7d7);
+    background: linear-gradient(135deg, #f3e9e7, #e9d7d7);
     font-family: "Roboto", sans-serif;
 }
 
@@ -52,7 +51,7 @@ body {
 .baner {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrar verticalmente */
+    justify-content: center;
     align-items: center;
     padding: 20px;
     margin: 40px auto;
@@ -61,7 +60,6 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.05);
     background: linear-gradient(135deg, #ffffff, #f9f9f9);
     align-items: center;
-    /* Centrar verticalmente */
 }
 
 .baner .img {
@@ -88,8 +86,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-/* Mejoras para escritorio */
-@media only screen and (min-width: 770px) {
+
+
+/*Escritorio*/
+@media only screen and (min-width: 1025px) {
     .servicios {
         width: 100%;
     }
@@ -100,7 +100,7 @@ body {
 
     .baner {
         flex-direction: row;
-        align-items: start;
+        align-items: center;
     }
 
     .baner img {
@@ -109,7 +109,7 @@ body {
 
     .baner .texto {
         text-align: left;
-        width: 40%;
+        width: 100%;
         margin-left: 30px;
     }
 }

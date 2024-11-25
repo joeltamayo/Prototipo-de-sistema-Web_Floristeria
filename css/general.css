@@ -5,11 +5,10 @@ body {
     height: 100%;
 
     position: relative;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-body {
-    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -19,7 +18,7 @@ body {
 header {
     width: 100%;
     background-color: rgb(207, 157, 157);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Añade sombra para destacar */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     z-index: 10;
     position: sticky;
     top: 0;
